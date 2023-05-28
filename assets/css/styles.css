@@ -277,6 +277,35 @@ svg {
   font-size: var(--bigger-font-size);
 }
 
+.home__education {
+  position: relative;
+  margin: auto;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.home__education span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--container-color);
+  border-left: 2px solid var(--text-color);
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
 .home__subtitle span,
 .home__title {
   color: var(--first-color);
@@ -686,6 +715,10 @@ svg {
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+
+  .home__education {
+    margin: 0;
   }
 
   .home__data,

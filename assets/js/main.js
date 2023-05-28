@@ -102,3 +102,20 @@ sr.reveal(`.home__image`, { origin: 'bottom' });
 sr.reveal(`.about__data, .skills__data`, { origin: 'left' });
 sr.reveal(`.about__image, .skills__content`, { origin: 'right' });
 sr.reveal(`.services__card, .projects__card`, { interval: 100 });
+
+/*=============== MULTIPLE TYPING TEXT ANIMATION ===============*/
+const text = document.querySelector('.home__education span');
+const textLoad = () => {
+  setTimeout(() => {
+    text.textContent = 'IT Student';
+  }, 0);
+  setTimeout(() => {
+    text.textContent = 'Font-End Developer';
+  }, 4000);
+  setTimeout(() => {
+    text.textContent = 'Back-End Developer';
+  }, 8000);
+};
+
+textLoad();
+setInterval(textLoad, 12000);
