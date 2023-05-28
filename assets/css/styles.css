@@ -749,7 +749,7 @@ svg {
   }
 }
 
-@media screen and (max-height: 620px) {
+@media screen and (max-height: 620px) and (min-width: 769px) {
   .container {
     margin-inline: auto;
   }
