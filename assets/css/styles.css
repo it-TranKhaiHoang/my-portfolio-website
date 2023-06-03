@@ -190,6 +190,30 @@ svg {
   color: var(--title-color);
   cursor: pointer;
 }
+
+.nav__widgets {
+  font-size: 1.25rem;
+  border-right: 2px solid var(--text-color);
+  padding-right: 1rem;
+  flex-grow: 8;
+  text-align: end;
+  margin-right: 1rem;
+}
+
+.nav__widgets i {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+#toggle-mode {
+  background-color: var(--body-color);
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
 /* Navigation for mobile devices */
 @media screen and (max-width: 1023px) {
   .nav__menu {
@@ -299,7 +323,7 @@ svg {
 @keyframes animate {
   40%,
   60% {
-    left: 100%;
+    left: calc(100% + 4px);
   }
   100% {
     left: 0%;

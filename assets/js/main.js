@@ -119,3 +119,15 @@ const textLoad = () => {
 
 textLoad();
 setInterval(textLoad, 12000);
+
+/*=============== MULTIPLE TYPING TEXT ANIMATION ===============*/
+const toggleMode = document.getElementById('toggle-mode');
+toggleMode.addEventListener('click', () => {
+  if (toggleMode.className == 'ri-sun-fill') {
+    toggleMode.classList.remove('ri-sun-fill');
+    toggleMode.classList.add('ri-moon-fill');
+  } else {
+    toggleMode.classList.remove('ri-moon-fill');
+    toggleMode.classList.add('ri-sun-fill');
+  }
+});
