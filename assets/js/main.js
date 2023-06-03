@@ -131,3 +131,5 @@ setInterval(textLoad, 12000);
 //     toggleMode.classList.add('ri-sun-fill');
 //   }
 // });
+
+
