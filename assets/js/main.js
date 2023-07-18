@@ -110,7 +110,7 @@ const textLoad = () => {
     text.textContent = 'IT Student';
   }, 0);
   setTimeout(() => {
-    text.textContent = 'Font-End Developer';
+    text.textContent = 'Front-End Developer';
   }, 4000);
   setTimeout(() => {
     text.textContent = 'Back-End Developer';
