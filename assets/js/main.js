@@ -107,14 +107,14 @@ sr.reveal(`.services__card, .projects__card`, { interval: 100 });
 const text = document.querySelector('.home__education span');
 const textLoad = () => {
   setTimeout(() => {
-    text.textContent = 'IT Student';
+    text.textContent = 'Full-stack Developer';
   }, 0);
-  setTimeout(() => {
-    text.textContent = 'Front-End Developer';
-  }, 4000);
-  setTimeout(() => {
-    text.textContent = 'Back-End Developer';
-  }, 8000);
+  // setTimeout(() => {
+  //   text.textContent = 'Front-End Developer';
+  // }, 4000);
+  // setTimeout(() => {
+  //   text.textContent = 'Back-End Developer';
+  // }, 8000);
 };
 
 textLoad();
