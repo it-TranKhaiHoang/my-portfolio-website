@@ -97,7 +97,7 @@ const sr = ScrollReveal({
   delay: 400,
 });
 
-sr.reveal(`.home__data, .home__social, .contact__container, .footer__container`);
+sr.reveal(`.home__data, .home__network, .contact__container, .footer__container`);
 sr.reveal(`.home__image`, { origin: 'bottom' });
 sr.reveal(`.about__data, .skills__data`, { origin: 'left' });
 sr.reveal(`.about__image, .skills__content`, { origin: 'right' });
